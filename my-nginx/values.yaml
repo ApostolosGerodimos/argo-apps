@@ -3,3 +3,10 @@ subnets:
   - subnet-0a55d58ea8fe5ed2b
   - subnet-017b841745daca11a
 replicaCount: 2
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 250m
+    memory: 256Mi
