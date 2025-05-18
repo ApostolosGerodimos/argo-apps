@@ -14,7 +14,9 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:1.25
+          image: 
+            repository: boicotaz/my-nginx
+            tags: 1.0
           ports:
             - containerPort: 80
           resources:
