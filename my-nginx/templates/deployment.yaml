@@ -14,9 +14,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: 
-            repository: boicotaz/my-nginx
-            tag: 1.0
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: 80
           resources:

@@ -10,3 +10,6 @@ resources:
   limits:
     cpu: 250m
     memory: 256Mi
+image:
+  repository: boicotaz/my-nginx
+  tag: "1.0"
