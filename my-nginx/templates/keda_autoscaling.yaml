@@ -17,7 +17,7 @@ spec:
         metricName: nginx_connections_active
         query: |
           sum(nginx_connections_active{job="nginx-metrics"})
-        threshold: "1"
+        threshold: "5"
 
     - type: cpu
       metadata:
