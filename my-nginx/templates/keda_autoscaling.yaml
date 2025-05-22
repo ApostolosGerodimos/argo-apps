@@ -15,7 +15,8 @@ spec:
       metadata:
         serverAddress: http://prometheus-server.monitoring.svc.cluster.local
         metricName: nginx_connections_active
-        query: nginx_connections_active
+        query: |
+          sum(nginx_connections_active{job="nginx-metrics"})
         threshold: "1"
 
     - type: cpu
