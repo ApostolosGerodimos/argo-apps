@@ -6,4 +6,5 @@ metadata:
 spec:
   podIdentity:
     provider: aws
+    identityOwner: workload
 {{- end }}
