@@ -1,0 +1,6 @@
+apiVersion: v2
+name: sqs-consumer
+description: A Go-based SQS consumer
+type: application
+version: 0.1.0
+appVersion: "1.0"

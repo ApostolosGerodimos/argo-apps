@@ -1,0 +1,27 @@
+replicaCount: 1
+
+image:
+  repository: boicotaz/sqs-consumer
+  tag: latest
+  pullPolicy: IfNotPresent
+
+aws:
+  region: eu-west-2
+  queueUrl: "https://sqs.eu-west-2.amazonaws.com/719869395447/my-test-queue"
+
+serviceAccount:
+  name: sqs-consumer
+  annotations:
+    eks.amazonaws.com/role-arn: "arn:aws:iam::719869395447:role/sqs-consumer-role"
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+autoscaling:
+  enabled: true
+  queueLength: 5
