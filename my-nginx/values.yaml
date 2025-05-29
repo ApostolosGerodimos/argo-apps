@@ -1,7 +1,6 @@
 subnets:
-  - subnet-0b1795d079be800f7
-  - subnet-0a55d58ea8fe5ed2b
-  - subnet-017b841745daca11a
+  - subnet-047817183bd31a187 
+  - subnet-03c251ec1c5c0d8fd
 #replicaCount: 2
 resources:
   requests:
